@@ -41,6 +41,7 @@ open class BarChartRenderer: BarLineScatterCandleBubbleRenderer
     
     internal let barCornerRadius = CGFloat(5.0)
 
+    
     private class Buffer
     {
         var rects = [CGRect]()
