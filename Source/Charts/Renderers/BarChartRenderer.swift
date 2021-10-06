@@ -381,11 +381,11 @@ open class BarChartRenderer: BarLineScatterCandleBubbleRenderer
             
             func calculateCornerRadius(rect: CGRect) -> CGFloat {
                 let height = Double(rect.size.height * 0.1)
-                let ceil = ceil(height)
-                if ceil > 8 {
+                let barHeight = ceil(height)
+                if  barHeight > 8 {
                     return 8
                 }
-                return CGFloat(ceil)+1
+                return CGFloat(barHeight)+1
             }
             
             let bezierPath = UIBezierPath(roundedRect: barRect, cornerRadius: calculateCornerRadius(rect: barRect))
